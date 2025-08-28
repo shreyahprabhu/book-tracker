@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController // 👈 This makes your main class a REST controller too
+@RestController 
 public class BookifyApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BookifyApplication.class, args);
 	}
-	@GetMapping("/") // 👈 This maps the root URL
+	@GetMapping("/") 
 	public String home() {
 		return "Welcome to Bookify!!";
 	}
