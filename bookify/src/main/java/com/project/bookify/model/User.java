@@ -16,7 +16,7 @@ public class User {
 
     private String username;
     private String email;
-    private String password; // Ideally hashed
+    private String password; 
 
     public User() {
     }
